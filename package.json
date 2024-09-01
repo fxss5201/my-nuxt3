@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare",
+    "prismamigrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "dayjs": "^1.11.13",
+    "dayjs-nuxt": "^2.1.11",
+    "element-plus": "^2.4.4",
+    "nuxt": "^3.13.0",
+    "pinia": "^2.2.2",
+    "vue": "latest",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.7",
+    "@nuxt/devtools": "^1.4.1",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia/nuxt": "^0.5.4",
+    "@prisma/client": "5.18.0",
+    "@prisma/nuxt": "^0.0.35",
+    "@types/node": "^22.5.0",
+    "prisma": "^5.18.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.3"
+  }
+}
